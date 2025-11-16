@@ -1,0 +1,129 @@
+================================================================================
+AUTOMATIC EDA REPORT
+================================================================================
+Generated on: 2025-11-15 14:54:09
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+  Shape: (1000, 8)
+  Total Rows: 1000
+  Total Columns: 8
+  Memory Usage: 0.20 MB
+
+2. COLUMN INFORMATION
+--------------------------------------------------------------------------------
+  Numeric Columns (5): age, income, score, years_experience, target
+  Categorical Columns (3): category, city, education
+
+3. MISSING VALUE HANDLING
+--------------------------------------------------------------------------------
+  Missing values found and handled:
+    - age: 50 (5.00%) -> Strategy: mean
+    - income: 30 (3.00%) -> Strategy: mean
+    - years_experience: 60 (6.00%) -> Strategy: median
+    - category: 20 (2.00%) -> Strategy: mode
+    - education: 40 (4.00%) -> Strategy: mode
+
+4. DESCRIPTIVE STATISTICS
+--------------------------------------------------------------------------------
+  Numeric Columns Summary:
+    age:
+      Mean: 49.64
+      Median: 49.64
+      Std: 17.74
+      Min: 18.00
+      Max: 79.00
+    income:
+      Mean: 50861.50
+      Median: 50861.50
+      Std: 15288.83
+      Min: 20000.00
+      Max: 97616.63
+    score:
+      Mean: 50.42
+      Median: 52.16
+      Std: 29.24
+      Min: 0.02
+      Max: 99.97
+    years_experience:
+      Mean: 5.04
+      Median: 3.67
+      Std: 4.76
+      Min: 0.00
+      Max: 38.46
+    target:
+      Mean: 0.51
+      Median: 1.00
+      Std: 0.50
+      Min: 0.00
+      Max: 1.00
+
+5. OUTLIER ANALYSIS
+--------------------------------------------------------------------------------
+  age:
+    Outlier Count: 0
+    Outlier Percentage: 0.00%
+  income:
+    Outlier Count: 3
+    Outlier Percentage: 0.30%
+  score:
+    Outlier Count: 0
+    Outlier Percentage: 0.00%
+  years_experience:
+    Outlier Count: 46
+    Outlier Percentage: 4.60%
+  target:
+    Outlier Count: 0
+    Outlier Percentage: 0.00%
+
+6. CORRELATION ANALYSIS
+--------------------------------------------------------------------------------
+  Highly Correlated Pairs (|r| > 0.7):
+    score <-> target: 0.868
+
+7. DISTRIBUTION ANALYSIS
+--------------------------------------------------------------------------------
+  age:
+    Skewness: -0.061
+    Kurtosis: -1.075
+    Normal Distribution: False
+  income:
+    Skewness: 0.075
+    Kurtosis: -0.202
+    Normal Distribution: False
+  score:
+    Skewness: -0.056
+    Kurtosis: -1.220
+    Normal Distribution: False
+  years_experience:
+    Skewness: 1.943
+    Kurtosis: 5.444
+    Normal Distribution: False
+  target:
+    Skewness: -0.052
+    Kurtosis: -2.001
+    Normal Distribution: False
+
+8. CATEGORICAL VARIABLE ANALYSIS
+--------------------------------------------------------------------------------
+  category:
+    Unique Values: 4
+    Most Frequent: A (447 times)
+  city:
+    Unique Values: 5
+    Most Frequent: New York (312 times)
+  education:
+    Unique Values: 4
+    Most Frequent: Bachelor (414 times)
+
+9. RECOMMENDATIONS
+--------------------------------------------------------------------------------
+  1. Missing values have been handled. Review the strategies applied.
+  2. Highly correlated features detected. Consider feature selection to avoid multicollinearity.
+  3. Skewed distributions found in: years_experience. Consider transformation (log, sqrt, etc.).
+  4. Dataset is ready for model building. Consider train-test split before proceeding.
+  5. For classification tasks, check class balance. For regression, verify target distribution.
+
+================================================================================
+END OF REPORT
+================================================================================
