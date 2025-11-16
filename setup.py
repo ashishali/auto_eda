@@ -11,11 +11,11 @@ setup(
     description="A completely automatic EDA (Exploratory Data Analysis) library for Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ashishali/auto_eda",
+    url="https://github.com/ashishali/quickeda_kit",
     project_urls={
-        "Bug Reports": "https://github.com/ashishali/auto_eda/issues",
-        "Source": "https://github.com/ashishali/auto_eda",
-        "Documentation": "https://github.com/ashishali/auto_eda#readme",
+        "Bug Reports": "https://github.com/ashishali/quickeda_kit/issues",
+        "Source": "https://github.com/ashishali/quickeda_kit",
+        "Documentation": "https://github.com/ashishali/quickeda_kit#readme",
     },
     packages=find_packages(exclude=["test_eda_output", "*.tests", "*.tests.*", "tests.*", "tests"]),
     classifiers=[
